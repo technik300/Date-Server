@@ -75,10 +75,10 @@ GET запрос index.php?date=01-01-2022
 					if(time != ''){
 						let response = await fetch('/index.php?date=' + time, { method: 'GET'});
 						let result = await response.text();
-            return result;
+                                                return result;
 					}else{
-            return;
-          }	
+                                                return;
+                                         }	
           
 				}
 			}
