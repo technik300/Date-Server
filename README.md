@@ -58,3 +58,29 @@ GET запрос index.php?date=01-01-2022
 -------------------------------------------------------------
 
 в левом верхнем углу проверочный функционал - можно установить дату и запросить установленную
+
+-------------------------------------------------------------
+пример функции JS для запросов:
+
+			async function requestDate(type, time = ''){
+      
+				if(type == 'get' ){               
+        
+					let response = await fetch('/index.php?date=', { method: 'GET'});
+					let result = await response.text();
+					return result;
+          
+				}else if(type == 'set'){
+        
+					if(time != ''){
+						let response = await fetch('/index.php?date=' + time, { method: 'GET'});
+						let result = await response.text();
+            return result;
+					}else{
+            return;
+          }	
+          
+				}
+			}
+
+
