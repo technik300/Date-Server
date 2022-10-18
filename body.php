@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>JSON server</title>
+		<title>Time server</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 		<link rel="stylesheet" type="text/css" href="style.css">
