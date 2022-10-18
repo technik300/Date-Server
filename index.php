@@ -8,7 +8,7 @@
    }
 
    function validation($date){   // функция валидации даты по формату 00-00-0000
-      $date_arr = explode('-',$date); // разбиваем строку даты в массив тпо разделителю `-`
+      $date_arr = explode('-',$date); // разбиваем строку даты в массив по разделителю `-`
       if(count($date_arr) !== 3) return false; // если в полученном массиве не 3 элемента - не валидно
       if(mb_strlen($date_arr[0])!== 2 || !is_numeric($date_arr[0]) || $date_arr[0] > 31 || $date_arr[0] < 1) return false; // если дата не двузначна или есть не только цифры или болььше 31 или меньше 1 - не валидно 
       if(mb_strlen($date_arr[1])!== 2 || !is_numeric($date_arr[1]) || $date_arr[1] > 12 || $date_arr[1] < 1) return false; // если месяц не двузначный или есть не только цифры или болььше 12 или меньше 1 - не валидно
@@ -23,7 +23,7 @@
             echo file_get_contents('timеstamp.txt'); // возврвщаем содержимое файла 'timеstamp.txt' - запрос времени 'get'
          }else{           // иначе
             if(validation($_date) !== false){ // если валидна дата в $_date = $_GET['date']
-               file_put_contents('timеstamp.txt',$_date); // то перезапишем значение в файл 'timеstamp.txt'
+               file_put_contents('timеstamp.txt',$_date); // то перезапишем значение в файл 'timеstamp.txt' - установка времени 'set'
             }else{              // если не валидна 
                echo 'request error';  // вернем текст ошибки
             }            
