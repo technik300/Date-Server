@@ -118,6 +118,7 @@ main{
    font-size: 20px;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
+   cursor: pointer;
    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmY5ODAwIiBkPSJNMjAgM2gtMVYxaC0ydjJIN1YxSDV2Mkg0Yy0xLjEgMC0yIC45LTIgMnYxNmMwIDEuMS45IDIgMiAyaDE2YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMThINFY4aDE2djEzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz4=")
 }
 #result{
@@ -152,9 +153,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
    left: 20px;
 }
 .set{
-   left: 120px;
+   left: 133px;
 }
-
+.get1{
+   left: 20px;
+   top: 120px;
+}
+.set1{
+   left: 142px;
+   top: 120px;
+}
    .hidden{
 visibility: collapse;
 display: none;
